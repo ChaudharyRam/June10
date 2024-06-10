@@ -1,0 +1,23 @@
+
+package constructor_notes;
+import java.util.*;
+public class SetExample {
+    public static void main(String[] args) {
+      Set s1=new HashSet();  
+      s1.add("Rabindra Kumar");
+      s1.add("Rabin");
+      s1.add(new String("Robin"));
+      s1.add(new Integer(100));
+      s1.add(new Float(12.45f));
+      s1.add(new String("CR"));
+      s1.add("Rabindra Kumar");
+      
+	Iterator data=s1.iterator();
+      		while(data.hasNext())
+      		{
+          		System.out.println(data.next());
+      		}
+                }
+    
+    
+}

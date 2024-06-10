@@ -1,0 +1,37 @@
+
+package constructor_notes;
+import java.util.*;
+public class ListExample {
+    public static void main(String[] args) {
+        List mylist=new LinkedList();
+        mylist.add("Kumar Ji");
+        mylist.add("Krishna Ji");
+        mylist.add(new String("Rabin"));
+        mylist.add(new Float(12.45f));
+        mylist.add(new Float(12.43));
+        
+        Iterator data=mylist.iterator();
+        while(data.hasNext())
+        {
+            System.out.println(data.next());
+        }
+    }
+
+
+List Interface contains:
+		List<data_type> list1=new ArrayList();
+		
+		List<data_type> list2=new LinkedList();
+		
+		List<data_type> list3=new Vector();
+		
+		List<data_type> list4=new Stack();
+ArrayList:
+	It implements List Interface.
+	It uses dynamic array 	to store data the duplicate element of different
+	data types.
+	Data can be randomly accessed.
+	
+		
+    
+}
